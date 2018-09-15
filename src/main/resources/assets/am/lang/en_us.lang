@@ -3,3 +3,6 @@ item.jewel.name=Pokeball
 
 //Blocks
 tile.cement_block.name=Cement Block
+
+//Entities
+entity.lootchicken.name=Chicken
