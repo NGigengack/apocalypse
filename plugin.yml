@@ -1,7 +1,0 @@
-name: ApocalypsePlugin
-author: TranceCake
-version: 1.0
-main: com.trancecake.apocalypse.Main
-commands:
-    spawnzombies:
-        description: Use this command to spawn a crap ton of zombies.

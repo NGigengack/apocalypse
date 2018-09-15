@@ -1,0 +1,16 @@
+[
+{
+  "modid": "am",
+  "name": "Apocalypse Mod",
+  "description": "A mod for 7 days to die.",
+  "version": "1.0",
+  "mcversion": "1.13.1",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TranceCake", "MiniBouncy"],
+  "credits": "Us two :)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
