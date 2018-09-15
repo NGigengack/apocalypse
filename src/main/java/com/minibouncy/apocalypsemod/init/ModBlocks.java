@@ -12,5 +12,5 @@ public class ModBlocks
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
-	public static final Block CONCRETE_BLOCK = new BlockBase("CONCRETE_BLOCK", Material.IRON);
+	public static final Block CONCRETE_BLOCK = new BlockBase("concrete_block", Material.IRON);
 }
