@@ -52,6 +52,7 @@ public class RegistryHandler
 	{
 		ModEntity.registerEntities();
 		EntityInit.registerEntities();
+		EntityInit.unregisterEntities();
 	}
 
 	public static void InitRegistries() {

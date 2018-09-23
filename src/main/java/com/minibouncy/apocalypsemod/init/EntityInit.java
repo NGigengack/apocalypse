@@ -8,7 +8,9 @@ import com.minibouncy.apocalypsemod.entity.EntityWalker;
 import com.minibouncy.apocalypsemod.util.Reference;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
@@ -25,6 +27,20 @@ public class EntityInit {
 //		EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID + ":" + name), entity, name, id, Main.instance, range, 1, true, color1, color2);
 		EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID, name), entity, name, id, Main.instance, range, 1, true, color1, color2);
 		//EntityRegistry.registerEgg(new ResourceLocation(Reference.MOD_ID + ":" + name), color1, color2);
+		
+		EntityRegistry.addSpawn(EntityWalker.class, 20, 10, 150, EnumCreatureType.MONSTER, getBiomes());
+		//new ResourceLocation()
+	}
+	
+	public static void unregisterEntities() {
+		unregisterEntity(EntityZombie.class, EnumCreatureType.MONSTER);
+	}
+	
+	private static void unregisterEntity(Class<? extends EntityLiving> entityClass, EnumCreatureType type) {
+		EntityRegistry.removeSpawn(entityClass, type, getBiomes());
+	}
+	
+	private static Biome[] getBiomes() {
 		List<Biome> spawnBiomes = new ArrayList<Biome>();
 		spawnBiomes.addAll(BiomeDictionary.getBiomes(BiomeDictionary.Type.PLAINS));
 		spawnBiomes.addAll(BiomeDictionary.getBiomes(BiomeDictionary.Type.FOREST));
@@ -33,7 +49,7 @@ public class EntityInit {
 
 		spawnBiomes.removeAll(BiomeDictionary.getBiomes(BiomeDictionary.Type.NETHER));
 		spawnBiomes.removeAll(BiomeDictionary.getBiomes(BiomeDictionary.Type.END));
-		EntityRegistry.addSpawn(EntityWalker.class, 20, 10, 150, EnumCreatureType.MONSTER, spawnBiomes.toArray(new Biome[spawnBiomes.size()]));
-		//new ResourceLocation()
+		
+		return spawnBiomes.toArray(new Biome[spawnBiomes.size()]);
 	}
 }
