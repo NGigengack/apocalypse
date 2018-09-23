@@ -30,12 +30,12 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event) 
 	{
-		
+		RegistryHandler.InitRegistries();
 	}
 	
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event) 
 	{
-		
+		RegistryHandler.postInitRegistries();		
 	}
 }
