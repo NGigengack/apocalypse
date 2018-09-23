@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.minibouncy.apocalypsemod.Main;
+import com.minibouncy.apocalypsemod.entity.EntityLootChicken;
 import com.minibouncy.apocalypsemod.entity.EntityWalker;
 import com.minibouncy.apocalypsemod.util.Reference;
 
@@ -21,6 +22,7 @@ public class EntityInit {
 	public static void registerEntities() {
 		System.out.println("registering walker");
 		registerEntity("walker", EntityWalker.class, Reference.ENTITY_WALKER, 50, 7820858, 11061950);
+		registerEntity("lootchicken", EntityLootChicken.class, Reference.ENTITY_LOOTCHICKEN, 50, 9288252,  9249852);
 	}
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2) {
