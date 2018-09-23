@@ -33,7 +33,7 @@ public class EntityInit {
 
 		spawnBiomes.removeAll(BiomeDictionary.getBiomes(BiomeDictionary.Type.NETHER));
 		spawnBiomes.removeAll(BiomeDictionary.getBiomes(BiomeDictionary.Type.END));
-		EntityRegistry.addSpawn(EntityWalker.class, 1, 10, 150, EnumCreatureType.MONSTER, spawnBiomes.toArray(new Biome[spawnBiomes.size()]));
+		EntityRegistry.addSpawn(EntityWalker.class, 20, 10, 150, EnumCreatureType.MONSTER, spawnBiomes.toArray(new Biome[spawnBiomes.size()]));
 		//new ResourceLocation()
 	}
 }

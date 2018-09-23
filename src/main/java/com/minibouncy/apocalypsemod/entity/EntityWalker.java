@@ -48,8 +48,10 @@ public class EntityWalker extends EntityZombie {
 	public void onLivingUpdate() {
         if (!this.world.isDaytime() && !this.world.isRemote && !this.isChild()) {
             this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
+            this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(90.0D);
         } else {
         	this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2D);
+        	this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(45.0D);
         }
 
         super.onLivingUpdate();
