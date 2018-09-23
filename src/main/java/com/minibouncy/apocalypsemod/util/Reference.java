@@ -9,5 +9,5 @@ public class Reference {
 	public static final String COMMON_PROXY_CLASS = "com.minibouncy.apocalypsemod.proxy.CommonProxy";
 	
 	public static final int ENTITY_LOOTCHICKEN = 120;
-
+	public static final int ENTITY_WALKER = 200;
 }
