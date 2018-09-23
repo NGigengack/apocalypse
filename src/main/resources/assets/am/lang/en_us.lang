@@ -2,7 +2,7 @@
 item.jewel.name=Pokeball
 
 //Blocks
-tile.cement_block.name=Concrete Block
+tile.concrete_block.name=Concrete Block
 
 //Entities
-entity.lootchicken.name=Chicken
+entity.lootchicken.name=Loot Chicken
