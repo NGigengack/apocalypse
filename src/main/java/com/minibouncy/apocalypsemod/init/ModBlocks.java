@@ -3,7 +3,6 @@ package com.minibouncy.apocalypsemod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.minibouncy.apocalypsemod.blocks.BlockBase;
 import com.minibouncy.apocalypsemod.blocks.ConcreteBlock;
 
 import net.minecraft.block.Block;
