@@ -1,1 +1,8 @@
+//Items
 item.jewel.name=Pokeball
+
+//Blocks
+tile.concrete_block.name=Concrete Block
+
+//Entities
+entity.lootchicken.name=Loot Chicken

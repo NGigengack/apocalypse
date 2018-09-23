@@ -2,6 +2,7 @@ package com.minibouncy.apocalypsemod;
 
 import com.minibouncy.apocalypsemod.proxy.CommonProxy;
 import com.minibouncy.apocalypsemod.util.Reference;
+import com.minibouncy.apocalypsemod.util.handlers.RegistryHandler;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -23,18 +24,18 @@ public class Main {
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) 
 	{
-		
+		RegistryHandler.preInitRegistries();
 	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event) 
 	{
-		
+		RegistryHandler.InitRegistries();
 	}
 	
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event) 
 	{
-		
+		RegistryHandler.postInitRegistries();		
 	}
 }

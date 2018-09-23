@@ -1,5 +1,6 @@
 package com.minibouncy.apocalypsemod.util.handlers;
 
+import com.minibouncy.apocalypsemod.init.EntityInit;
 import com.minibouncy.apocalypsemod.init.ModBlocks;
 import com.minibouncy.apocalypsemod.init.ModItems;
 import com.minibouncy.apocalypsemod.util.IHasModel;
@@ -44,5 +45,21 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}
+	}
+	
+
+	public static void preInitRegistries() 
+	{
+		EntityInit.registerEntities();
+		EntityInit.unregisterEntities();
+	}
+
+	public static void InitRegistries() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void postInitRegistries() {
+		// TODO Auto-generated method stub
 	}
 }
